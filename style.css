@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.header1 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header2 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.heaader__select {
+  border: none;
+}
+.heaedr__button {
+  border: none;
+}
+
+.home {
+  margin-top: 40px;
+  background-color: #f7f2f2;
+}
+.home__head {
+  color: #a7a6a6;
+}
+
+.home__section {
+  display: flex;
+  justify-content: space-between;
+}
+.home__section {
+  margin-top: 30px;
+}
+.home__section p {
+  max-width: 690px;
+}
+.home__sections {
+  text-align: center;
+}
+.home__section--button1 {
+  background-color: #ffcc33;
+  max-width: 350px;
+  min-width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+}
+.home__section--button1:hover {
+  background-color: rgb(243, 219, 7);
+}
+.home__section--button {
+  background-color: white;
+  max-width: 350px;
+  min-width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+}
+.home__section--button:hover {
+  background-color: rgb(243, 219, 7);
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.feature__text {
+  max-width: 150px;
+}
+.feature__text1 {
+  max-width: 200px;
+}
+
+.feature__pereslat {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.feature__pereslat-p {
+  max-width: 240px;
+
+  color: rgb(89, 87, 87);
+}
+
+@media screen and (max-width: 630px) {
+  .header2__h3 {
+    display: none;
+  }
+  .home__section {
+    display: block;
+  }
+  .feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 525px) {
+  .feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 522px) {
+  .heaader__select {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .feature {
+    display: block;
+    gap: 20pxs;
+  }
+}
+@media screen and (max-width: 445px) {
+  .header__h3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 362px) {
+  .home__section--img {
+    width: 100%;
+  }
+  .feature__pereslat {
+    display: block;
+    text-align: center;
+  }
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
