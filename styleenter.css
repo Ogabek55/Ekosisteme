@@ -1,12 +1,14 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 .container {
-  width: 95%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   opacity: initial;
+  box-sizing: border-box;
 }
 
 .header {
@@ -88,7 +90,7 @@ a {
   text-align: center;
   border: 1px solid;
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   left: 35%;
   background-color: white;
   box-sizing: border-box;
@@ -120,7 +122,15 @@ a {
     display: none;
   }
 }
-@media screen and (max-width: 362px) {
+@media screen and (max-width: 374px) {
+  .home {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .enter {
+    margin-right: auto;
+    margin-left: auto;
+  }
   .home__section--img {
     width: 100%;
   }
